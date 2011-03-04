@@ -27,9 +27,7 @@
 
 
 (load-library "my-color-theme")
-(load-library "anything")
 (global-font-lock-mode 1)
-;;(color-theme-initialize)
 (color-theme-ryan)
 
 ;; visual editing
