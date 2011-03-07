@@ -1,0 +1,12 @@
+- Some handy visual tools
+- Ido-mode / Yasnippet
+- Python developpement environnement ready
+
+
+Troubleshooting
+---------------
+1. If (pymacs-load "ropemacs" "rope-") failed, then : apt-get install --reinstall pymacs`
+
+2. Byte-compilation of js2  : emacs --batch --eval '(byte-compile-file "js2.el")'
+
+	  
