@@ -69,7 +69,7 @@
 
 (require 'yasnippet)
 (yas/initialize)
-(setq yas/root-directory '("~/etc/emacs/mysnippets"
+(setq yas/root-directory '("~/etc/emacs/snippets"
       "/usr/share/emacs/site-lisp/yasnippet/snippets/"))
 (mapc 'yas/load-directory yas/root-directory)
 
