@@ -2,6 +2,9 @@
 - Ido-mode / Yasnippet
 - Python developpement environnement ready
 
+Install
+-------
+$ ln -s $(pwd)/dot_emacs.el /home/xtrm/.emacs
 
 Troubleshooting
 ---------------
