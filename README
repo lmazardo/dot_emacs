@@ -1,9 +1,14 @@
-- Some handy visual tools
-- Ido-mode / Yasnippet
-- Python developpement environnement ready
+- Some handy visual tools (emacs-goodies-el (color-theme))
+- Ido-mode / Yasnippet (yasnippet)
+- Python developpement environnement ready (pymacs python-ropemacs)
+
+REQUIRE:
+-------
+apt-get install emacs-goodies-el icycles elscreen pymacs python-ropemacs yasnippet
 
 Install
 -------
+$ git clone https://github.com/lmazardo/dot_emacs.git $HOME/etc/emacs # Rename git_module: dot_emacs to etc/emacs directory
 $ ln -s $(pwd)/dot_emacs.el $HOME/.emacs
 
 Troubleshooting
@@ -12,4 +17,3 @@ Troubleshooting
 
 2. Byte-compilation of js2  : emacs --batch --eval '(byte-compile-file "js2.el")'
 
-	  
