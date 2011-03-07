@@ -4,7 +4,7 @@
 
 Install
 -------
-$ ln -s $(pwd)/dot_emacs.el /home/xtrm/.emacs
+$ ln -s $(pwd)/dot_emacs.el $HOME/.emacs
 
 Troubleshooting
 ---------------
