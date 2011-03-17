@@ -4,11 +4,12 @@
 
 REQUIRE:
 -------
-apt-get install emacs-goodies-el icycles elscreen pymacs python-ropemacs yasnippet
+apt-get install emacs-goodies-el icicles elscreen pymacs python-ropemacs yasnippet
 
 Install
 -------
 $ git clone https://github.com/lmazardo/dot_emacs.git $HOME/etc/emacs # Rename git_module: dot_emacs to etc/emacs directory
+$ cd $HOME/etc/emacs
 $ ln -s $(pwd)/dot_emacs.el $HOME/.emacs
 
 Troubleshooting
