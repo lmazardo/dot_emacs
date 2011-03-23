@@ -53,30 +53,16 @@
                         (string= (car imenu--rescan-item) name))
               (add-to-list 'symbol-names name)
               (add-to-list 'name-and-pos (cons name position))))))))
-;    (global-set-key "\C-ci" 'ido-goto-symbol) ; or any key you see fit
-
-;;does not works
-(defun doctest-launch
-  (doctest-mode)
-  (doctest-execute)
-  (python-mode))
-
 
 (add-hook 'python-mode-hook 
 	  '(lambda ()
 	     (local-set-key [C-prior] 'py-beginning-of-def-or-class)
 	     (local-set-key [C-next] 'py-end-of-def-or-class)
 	     (local-set-key [C-return] 'ido-goto-symbol)
-	     (local-set-key [C-return] 'doctest-launch)
-	     (local-set-key [f7]     'doctest-mode)
 	     (hs-minor-mode t)))
-
-(add-hook 'doctest-mode-hook 
-	  '(lambda ()
-	     (local-set-key [f7]     'python-mode)))
-
 (require 'pymacs)
 (pymacs-load "ropemacs" "rope-")
+
 (setq ropemacs-enable-autoimport t)
 (defun toggle-hiding (column)
   (interactive "P")
