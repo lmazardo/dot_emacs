@@ -7,6 +7,11 @@
 (setq js2-basic-offset 2)
 (setq js2-use-font-lock-faces t)
 
+(add-hook 'js2-mode-hook 
+	  '(lambda ()
+	     (local-set-key (kbd "C-+") 'js2-mode-toggle-element)))
+
+
    ;; ido-mode and imenu
     (defun ido-goto-symbol (&optional symbol-list)
       "Refresh imenu and jump to a place in the buffer using Ido."
@@ -59,6 +64,7 @@
 	     (local-set-key [C-prior] 'py-beginning-of-def-or-class)
 	     (local-set-key [C-next] 'py-end-of-def-or-class)
 	     (local-set-key [C-return] 'ido-goto-symbol)
+	     (local-set-key (kbd "C-'") 'hippie-expand)
 	     (hs-minor-mode t)))
 (require 'pymacs)
 (pymacs-load "ropemacs" "rope-")
@@ -98,7 +104,6 @@
 (global-set-key (kbd "C-+") 'toggle-hiding)
 (global-set-key (kbd "C-=") 'comment-or-uncomment-region)
 
-
 (autoload 'hideshowvis-enable "hideshowvis" "Highlight foldable regions")
 
 (autoload 'hideshowvis-minor-mode
@@ -108,7 +113,7 @@
 
 
 (dolist (hook (list 'emacs-lisp-mode-hook
-                    'c++-mode-hook 'python-mode-hook) )
+                    'c++-mode-hook 'python-mode-hook 'js2-mode-hook) )
   (add-hook hook 'hideshowvis-enable))
 
 
