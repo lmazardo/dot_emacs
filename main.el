@@ -64,7 +64,9 @@
 (global-set-key [f9]     'compile) ;;my-compile-or-tramp-compile)
 (define-key global-map "\eg"    'goto-line)
 
-
+(require 'highlight-current-line)
+(highlight-current-line-on t)
+ 
 (load-library "coding")
 
 (require 'yasnippet)
@@ -75,3 +77,4 @@
 
 
 (message "main is loaded")
+

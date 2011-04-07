@@ -729,5 +729,6 @@
      (xxml-sparkle-face ((t (nil))))
      (xxml-unbreakable-space-face ((t (nil))))
      (yellow ((t (nil))))
+     (highlight-current-line-face ((t (:background "black" :weight bold))))
      (zmacs-region ((t (:background "blue3")))))))
 (add-to-list 'color-themes '(my-color-theme  "THEME NAME" "YOUR NAME"))
