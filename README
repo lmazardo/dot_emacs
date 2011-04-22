@@ -1,13 +1,30 @@
+OVERVIEW
+========
+
 - Some handy visual tools (emacs-goodies-el (color-theme))
 - Ido-mode / Yasnippet (yasnippet)
 - Python developpement environnement ready (pymacs python-ropemacs)
 
-REQUIRE:
--------
-apt-get install emacs-goodies-el icicles elscreen pymacs python-ropemacs yasnippet
+KEYS
+====
 
-Install
--------
+useful globals keys:
+--------------------
+[C-tab] 	'other-window		; same as C-x o
+[C-return] 	'kill-this-buffer	; same as C-x k
+[C->]    	'bs-cycle-next		; next buffer
+(C-<]   	'bs-cycle-previous	; previous buffer
+[f5]     	'linum-mode		; line numbering mode
+[f6]     	'menu-bar-mode		; toggle menu-bar-mode
+[M-up] 		'move-line-region-up	; move up line or region like eclipse
+[M-down] 	'move-line-region-down  ; move down line or region like eclipse
+
+INSTALL
+=======
+
+Require : apt-get install emacs-goodies-el icicles elscreen pymacs python-ropemacs yasnippet
+---------
+
 $ git clone https://github.com/lmazardo/dot_emacs.git $HOME/etc/emacs # Rename git_module: dot_emacs to etc/emacs directory
 $ cd $HOME/etc/emacs
 $ ln -s $(pwd)/dot_emacs.el $HOME/.emacs
