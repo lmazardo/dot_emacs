@@ -53,16 +53,7 @@
 
 ;; globals keys and mouse config
 (mouse-wheel-mode t)
-(global-set-key [C-tab] 'other-window)
-(global-set-key [C-return] 'kill-this-buffer)
-(global-set-key [(control >)]    'bs-cycle-next)
-(global-set-key [(control <)]   'bs-cycle-previous)
-(global-set-key [f5]     'linum-mode)
-(global-set-key [f6]     'menu-bar-mode)
-(global-set-key [f7]     'anything)
-(global-set-key [f8]     'next-error)
-(global-set-key [f9]     'compile) ;;my-compile-or-tramp-compile)
-(define-key global-map "\eg"    'goto-line)
+(load-library "keys")
 
 (require 'highlight-current-line)
 (highlight-current-line-on t)
