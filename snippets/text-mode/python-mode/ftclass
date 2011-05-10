@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+# name: ftclass
+# contributor: Luc Mazardo
+# derived from : class snippet
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+#!/usr/bin/env python
+#
+# -*- coding: utf-8 -*-
+import unittest
+
+class Test${1:ClassName}(unittest.TestCase):
+  def setUp(self):
+    pass
+
+  def tearDown(self):
+    pass
+
+  def test_${2:alwaysTrue}(self):
+    self.assertEqual(1,1)$0
+
+
+if __name__ == '__main__':
+  import sys, datetime
+  print datetime.datetime.today()
+  sys.argv.append('-v')
+  unittest.main()

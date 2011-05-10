@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+# name: dt
+# grabbed from def snippet
+# contributor: Orestis Markou
+# contributor: Yasser González Fernández <yglez@uh.cu>
+# --
+def ${1:name}($2):
+    """
+    >>> $1($3)
+    $4
+    """
+    $0

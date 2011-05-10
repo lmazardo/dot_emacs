@@ -1,0 +1,8 @@
+# contributor: Mads D. Kristensen 
+# name: try
+# url: http://kedeligdata.blogspot.com/2009/03/more-python-yasnippets.html
+# --
+try:
+    $0
+except ${1:Exception}, ${2:e}:
+    pass

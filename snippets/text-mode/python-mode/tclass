@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+# name: tclass
+# contributor: Luc Mazardo
+# derived from : class snippet
+# --
+class Test${1:ClassName}(unittest.TestCase):
+    def setUp(self):
+        pass
+
+    def tearDown(self):
+        pass
+
+    def test_${3:name_of_test}(self):
+        self.assertEqual(1,1)
+	$0
+

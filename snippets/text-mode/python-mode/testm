@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+# name: testm
+# contributor: Luc Mazardo <luc@nospan.mazardo.com>
+# --
+def test_${1:name}(self):
+  $0

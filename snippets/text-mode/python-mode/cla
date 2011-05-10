@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# name: c
+# contributor: Luc Mazardo
+# derived from : class snippet
+# --
+class ${1:ClassName}():
+
+  def __init__(self, ):
+    pass$0

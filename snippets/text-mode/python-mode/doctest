@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+# name: doctest
+# contributor: Luc Mazardo <luc@nospan.mazardo.com>
+# --
+$0
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+    doctest.master.summarize() 
+
+    
+
+    
+    

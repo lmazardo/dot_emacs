@@ -1,0 +1,5 @@
+# -*- coding: utf-8 -*-
+# name: dem
+# --
+def ${1:name}(self, $2):
+  $0
