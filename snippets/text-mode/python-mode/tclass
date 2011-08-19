@@ -11,6 +11,6 @@ class Test${1:ClassName}(unittest.TestCase):
         pass
 
     def test_${3:name_of_test}(self):
-        self.assertEqual(1,1)
+        self.assertEqual(1,0)
 	$0
 

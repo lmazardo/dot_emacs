@@ -16,8 +16,8 @@ class Test${1:ClassName}(unittest.TestCase):
   def tearDown(self):
     pass
 
-  def test_${2:alwaysTrue}(self):
-    self.assertEqual(1,1)$0
+  def test_${2:alwaysFalse}(self):
+    self.assertEqual(1,0)$0
 
 
 if __name__ == '__main__':
