@@ -10,18 +10,18 @@
 import unittest
 
 class Test${1:ClassName}(unittest.TestCase):
-  def setUp(self):
-    pass
+    def setUp(self):
+        pass
 
-  def tearDown(self):
-    pass
+    def tearDown(self):
+        pass
 
-  def test_${2:alwaysFalse}(self):
-    self.assertEqual(1,0)$0
+    def test_${2:alwaysFalse}(self):
+        self.assertEqual(1,0)$0
 
 
 if __name__ == '__main__':
-  import sys, datetime
-  print datetime.datetime.today()
-  sys.argv.append('-v')
-  unittest.main()
+    import sys, datetime
+    print datetime.datetime.today()
+    sys.argv.append('-v')
+    unittest.main()
